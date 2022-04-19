@@ -1,5 +1,7 @@
 package week1.day2.classroom.arrays;
 
+import java.util.Arrays;
+
 public class MissingElementInAnArray {
 
 	public static void main(String[] args) {
@@ -16,10 +18,21 @@ public class MissingElementInAnArray {
 				// print the number
 				
 				// once printed break the iteration
-				
+		Arrays.sort(arr);   
+
+		int len=arr.length;
+		int sum =(len+1)*(len+2)/2;
+		for(int i=0;i<len; i++) {
+
+			sum=sum-arr[i];
+		}					
+		System.out.println("missing Elemet is "+sum);
+
+
+	}
 				
 		
+	
 
 	}
 
-}
